@@ -9,7 +9,9 @@ const User = () => {
 
   return (
     <div>
-      <label>Enter your name:</label>
+      <div>
+        <p>Enter your name:</p>
+      </div>
       <input type="text" value={name} onChange={handleChange} />
       {name && <p>Hello {name}!</p>}
     </div>
