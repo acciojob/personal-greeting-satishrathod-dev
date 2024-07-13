@@ -9,8 +9,9 @@ const User = () => {
 
   return (
     <div>
-      <label>Enter your name:</label>
-      <input type="text" value={name} onChange={handleChange} />
+      <label for="inputtag">Enter your name:</label>
+      <input id="inputtag" type="text" value={name} onChange={handleChange} />
+      <p></p>
       {name && <p>Hello {name}!</p>}
     </div>
   );
